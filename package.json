@@ -6,7 +6,7 @@
     "node": "22.x"
   },
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "node app.js"
   },
   "author": "harish",
   "license": "ISC",
