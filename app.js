@@ -15,6 +15,10 @@ con.on('open',()=>{
 
 app.use(express.json())
 
+app.get('/',(req,res)=>{
+    res.send("Hello... from Backend!")
+})
+
 const userRouter = require('./routes/users')
 app.use('/users',userRouter)
 
