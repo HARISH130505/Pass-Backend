@@ -3,14 +3,17 @@ const User = require('../model/schema')
 
 const router = express()
 
-router.get('/',async(req,res)=>{
-    try{
-        const user = await User.find()
-        res.json(user)
-    }
-    catch(err){
-        res.send("Error:",err)
-    }
+// router.get('/',async(req,res)=>{
+//     try{
+//         const user = await User.find()
+//         res.json(user)
+//     }
+//     catch(err){
+//         res.send("Error:",err)
+//     }
+// })
+router.get('/',(req,res)=>{
+    res.send("Hello user")
 })
 
 router.post('/',async(req,res)=>{
