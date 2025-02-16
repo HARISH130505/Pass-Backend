@@ -8,7 +8,7 @@ app.use(cors({
 }));
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://harish130505:mongoshdb@harish.tcjpp.mongodb.net/passport');
+mongoose.connect('mongodb+srv://harish130505:easypass@harish.tcjpp.mongodb.net/passport');
 const con = mongoose.connection
 con.on('open',()=>{
     console.log("Connected with db...")
