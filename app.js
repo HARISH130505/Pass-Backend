@@ -3,7 +3,8 @@ const app = express()
 
 const cors = require('cors')
 app.use(cors({
-    origin: 'https://metapass-orcin.vercel.app'
+    origin: 'https://metapass-orcin.vercel.app',
+    credentials: true
 }));
 
 const mongoose = require('mongoose');
